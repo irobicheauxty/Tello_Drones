@@ -60,6 +60,8 @@ try:
         sendmsg('takeoff')
 
         sendmsg('forward 100')
+        time.sleep(2)
+        sendmsg('cw 360')
 
         sendmsg('land')
 
