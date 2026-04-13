@@ -44,7 +44,7 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nTy, Cole & Robicheax, Rowe")
+print("\nTy, Cole & Robicheax, Rowe = Drone E1D")
 print("Program Name:Flight Simulator ")
 print("Date: 4.8.26")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
@@ -57,10 +57,9 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff')
-
+        sendmsg('takeoff', 8)
+        sendmsg("flip r")
         sendmsg('forward 100')
-        time.sleep(2)
         sendmsg('cw 360')
 
         sendmsg('land')
