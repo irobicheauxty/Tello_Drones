@@ -70,6 +70,5 @@ try:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
 except KeyboardInterrupt:
     sendmsg('emergency')
-
 breakr = True
 sock.close()
