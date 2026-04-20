@@ -44,9 +44,9 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+print("\n Cole Rowe, Ty Robicheaux")
+print("Program Name: Hoop Competition ")
+print("Date: 4.20.2026 ")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -59,8 +59,69 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        # Commit Message: First Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: First Hoop Video in Repository
+        # Write code below
+
+
+
+        # Commit Message: Second Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Second Hoop Video in Repository
+        # Write code below 
+
+
+
+        # Commit Message: Thrid Hoop - Stable
+        # SDK CURVE command
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Second Hoop Video in Repository
+        # Write code below 
+
+
+        # Commit Message: Fourth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Fourth Hoop Video in Repository
+        # Write code below 
+
+
+
+        # Commit Message: Fifth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Fifth Hoop Video in Repository
+        # Write code below 
+
+
+        # Commit Message: Sixth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Sixth Hoop Video in Repository
+        # Write code below 
+
+        # Commit Message: Seventh Hoop - Stable
+        # SDK CURVE command
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Seventh Hoop Video in Repository
+        # Write code below 
+
+
+        
+        # Commit Message: Eighth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Eighth Hoop Video in Repository
+        # Write code below 
+
+
+        # Video of entire Hoop Competition
+        # Commit Message: Video of entire Hoop Competition in Repository
 
         sendmsg('land')
 
