@@ -64,6 +64,7 @@ try:
         # Make sure I put the video in our Repository
         # Commit Message: First Hoop Video in Repository
         # Write code below
+<<<<<<< HEAD
 
         sendmsg('command', 0)
         sendmsg('takeoff', 8)
@@ -74,6 +75,12 @@ try:
 
         print('\nGreat Flight!!!')
 
+=======
+        import time
+        sendmsg('up 10')
+        time.sleep(3)
+        sendmsg('forward 290')
+>>>>>>> e3bc7ad74f05e89f3bf38e9fe7767b1b7c596493
 
         # Commit Message: Second Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
