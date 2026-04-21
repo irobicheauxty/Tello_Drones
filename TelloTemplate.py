@@ -65,13 +65,11 @@ try:
         # Commit Message: First Hoop Video in Repository
         # Write code below
 
-        ready.lower() == 'yes'
-        print("\nStarting Drone!\n")
-
         sendmsg('command', 0)
         sendmsg('takeoff', 8)
-        sendmsg('forward 100')
-
+        import time
+        time.sleep (3)
+        sendmsg('forward 280')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
