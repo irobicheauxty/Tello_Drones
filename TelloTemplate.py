@@ -74,7 +74,6 @@ try:
 
         print('\nGreat Flight!!!')
 
-
         # Commit Message: Second Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
         # Make sure I put the video in our Repository
