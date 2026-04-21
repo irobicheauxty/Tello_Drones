@@ -65,11 +65,7 @@ try:
         # Commit Message: First Hoop Video in Repository
         # Write code below
 
-        ready.lower() == 'yes'
-        print("\nStarting Drone!\n")
-
         sendmsg('forward 200')
-
 
         # Commit Message: Second Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
