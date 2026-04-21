@@ -68,7 +68,7 @@ try:
         ready.lower() == 'yes'
         print("\nStarting Drone!\n")
 
-        sendmsg('forward 280')
+        sendmsg('forward 200')
 
         sendmsg('land')
 
