@@ -66,16 +66,14 @@ try:
         # Write code below
 
         sendmsg('forward 200')
-
+   
         # Commit Message: Second Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
         # Make sure I put the video in our Repository
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
  
-        sendmsg('forward 200')
-        sendmsg('up 50')
-
+    
         # Commit Message: Thrid Hoop - Stable
         # SDK CURVE command
         # Don't forget to take vide of this portion of the comp.
