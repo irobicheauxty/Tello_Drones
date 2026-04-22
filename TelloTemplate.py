@@ -72,7 +72,17 @@ try:
         # Make sure I put the video in our Repository
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
- 
+        
+        # Small alignment tweaks before moving
+        sendmsg('up 20', 3)        # adjust height
+        sendmsg('right 20', 3)     # adjust sideways
+
+        # Move toward hoop slowly
+        sendmsg('forward 100', 5)
+
+        # Fine tune again
+        sendmsg('left 10', 3)
+        sendmsg('forward 100', 5)
     
         # Commit Message: Thrid Hoop - Stable
         # SDK CURVE command
