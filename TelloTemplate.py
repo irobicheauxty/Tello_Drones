@@ -55,7 +55,7 @@ ready = input('\nAre you ready to take flight: ')
 try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
-
+        sendmsg('battery?', 2)
         sendmsg('command', 0)
         sendmsg('takeoff')
 
@@ -74,16 +74,19 @@ try:
         # Write code below 
         
         # Small alignment tweaks before moving
-        sendmsg('up 20', 3)        # adjust height
-        sendmsg('right 20', 3)     # adjust sideways
+        sendmsg('up 20', 3)        
+        sendmsg('right 20', 3)     
 
-        # Move toward hoop slowly
-        sendmsg('forward 100', 5)
+        # Move forward + right + up in ONE motion
+        sendmsg('go 100 20 30 40', 6)
 
         # Fine tune again
         sendmsg('left 10', 3)
         sendmsg('forward 100', 5)
-    
+
+
+
+
         # Commit Message: Thrid Hoop - Stable
         # SDK CURVE command
         # Don't forget to take vide of this portion of the comp.
