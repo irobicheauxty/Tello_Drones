@@ -57,7 +57,13 @@ try:
         print("\nStarting Drone!\n")
         sendmsg('battery?', 2)
         sendmsg('command', 0)
-        sendmsg('takeoff')
+        import time
+
+        sendmsg("takeoff")
+        time.sleep(3)
+
+        
+
 
         # Commit Message: First Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
@@ -65,7 +71,8 @@ try:
         # Commit Message: First Hoop Video in Repository
         # Write code below
 
-        sendmsg('forward 200')
+        sendmsg("forward 185")
+        time.sleep(3)
    
         # Commit Message: Second Hoop - Stable
         # Don't forget to take vide of this portion of the comp.
@@ -73,18 +80,12 @@ try:
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
         
-        # Small alignment tweaks before moving
-        sendmsg('up 20', 3)        
-        sendmsg('right 20', 3)     
+        sendmsg('go 180 0 50 40')  # perfectly straight forward + up
+        time.sleep(4)
 
-        # Move forward + right + up in ONE motion
-        sendmsg('go 100 20 30 40', 6)
+        
 
-        # Fine tune again
-        sendmsg('left 10', 3)
-        sendmsg('forward 100', 5)
-
-
+        
 
 
         # Commit Message: Thrid Hoop - Stable
