@@ -80,12 +80,12 @@ try:
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
         
-        sendmsg('go 180 0 50 40')  # perfectly straight forward + up
+        sendmsg('go 200 0 50 40')  # perfectly straight forward + up
         time.sleep(4)
 
         
 
-        #hi
+        
 
 
         # Commit Message: Thrid Hoop - Stable
@@ -94,6 +94,11 @@ try:
         # Make sure I put the video in our Repository
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
+        
+        
+        sendmsg('curve 155 155 0 0 290 0 60')
+        sendmsg('curve -155 -155 0 0 -250 0 60')
+        time.sleep(4)
 
 
         # Commit Message: Fourth Hoop - Stable
