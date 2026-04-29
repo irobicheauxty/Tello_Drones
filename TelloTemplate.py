@@ -95,10 +95,18 @@ try:
         # Commit Message: Second Hoop Video in Repository
         # Write code below 
         
-        
+
+        # First curve:
+        # Moves to (155 right, 155 forward, 0 up) then to (0 right, 290 forward, 0 up)
+        # Creates a smooth outward arc
         sendmsg('curve 155 155 0 0 290 0 60')
+
+        # Second curve:
+        # Moves back symmetrically to re-center position after the arc
+        # (-155 left, -155 backward, 0 up) then to (0, -250 backward, 0 up)
         sendmsg('curve -155 -155 0 0 -250 0 60')
-        time.sleep(4)
+
+        time.sleep(4)  # wait for both curve motions
 
 
         # Commit Message: Fourth Hoop - Stable
@@ -106,7 +114,8 @@ try:
         # Make sure I put the video in our Repository
         # Commit Message: Fourth Hoop Video in Repository
         # Write code below 
-
+        sendmsg('go 200 0 -50 40')  # perfectly straight forward + down
+        time.sleep(4)
 
 
         # Commit Message: Fifth Hoop - Stable
