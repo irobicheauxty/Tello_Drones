@@ -44,9 +44,9 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+print("\n Cole Rowe, Ty Robicheaux")
+print("Program Name: Hoop Competition ")
+print("Date: 4.20.2026 ")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -55,12 +55,100 @@ ready = input('\nAre you ready to take flight: ')
 try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
-
+        sendmsg('battery?', 2)
         sendmsg('command', 0)
-        sendmsg('takeoff')
+        import time
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        sendmsg("takeoff")
+        time.sleep(3)
+
+        
+
+
+        # Commit Message: First Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: First Hoop Video in Repository
+        # Write code below
+
+        sendmsg("forward 185")
+        time.sleep(3)
+   
+        # Commit Message: Second Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Second Hoop Video in Repository
+        # Write code below 
+        
+        sendmsg('go 200 0 50 40')  # perfectly straight forward + up
+        time.sleep(4)
+
+        
+
+        
+
+
+        # Commit Message: Thrid Hoop - Stable
+        # SDK CURVE command
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Second Hoop Video in Repository
+        # Write code below 
+        
+
+        # First curve:
+        # Moves to (155 right, 155 forward, 0 up) then to (0 right, 290 forward, 0 up)
+        # Creates a smooth outward arc
+        sendmsg('curve 155 155 0 0 290 0 60')
+
+        # Second curve:
+        # Moves back symmetrically to re-center position after the arc
+        # (-155 left, -155 backward, 0 up) then to (0, -250 backward, 0 up)
+        sendmsg('curve -155 -155 0 0 -250 0 60')
+
+        time.sleep(4)  # wait for both curve motions
+
+
+        # Commit Message: Fourth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Fourth Hoop Video in Repository
+        # Write code below 
+        sendmsg('go 200 0 -50 40')  # perfectly straight forward + down
+        time.sleep(4)
+
+
+        # Commit Message: Fifth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Fifth Hoop Video in Repository
+        # Write code below 
+
+
+        # Commit Message: Sixth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Sixth Hoop Video in Repository
+        # Write code below 
+
+        # Commit Message: Seventh Hoop - Stable
+        # SDK CURVE command
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Seventh Hoop Video in Repository
+        # Write code below 
+
+
+        
+        # Commit Message: Eighth Hoop - Stable
+        # Don't forget to take vide of this portion of the comp.
+        # Make sure I put the video in our Repository
+        # Commit Message: Eighth Hoop Video in Repository
+        # Write code below 
+
+
+        # Video of entire Hoop Competition
+        # Commit Message: Video of entire Hoop Competition in Repository
 
         sendmsg('land')
 
