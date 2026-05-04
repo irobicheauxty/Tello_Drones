@@ -44,9 +44,15 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
+<<<<<<< HEAD
 print("\n Cole Rowe, Ty Robicheaux")
 print("Program Name: Hoop Competition ")
 print("Date: 4.20.2026 ")
+=======
+print("\nTy, Cole & Robicheax, Rowe = Drone E1D")
+print("Program Name:Flight Simulator ")
+print("Date: 4.8.26")
+>>>>>>> Sandbox
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -57,6 +63,7 @@ try:
         print("\nStarting Drone!\n")
         sendmsg('battery?', 2)
         sendmsg('command', 0)
+<<<<<<< HEAD
         import time
 
         sendmsg("takeoff")
@@ -149,6 +156,12 @@ try:
 
         # Video of entire Hoop Competition
         # Commit Message: Video of entire Hoop Competition in Repository
+=======
+        sendmsg('takeoff', 8)
+        sendmsg("flip r")
+        sendmsg('forward 100')
+        sendmsg('cw 360')
+>>>>>>> Sandbox
 
         sendmsg('land')
 
@@ -158,6 +171,5 @@ try:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
 except KeyboardInterrupt:
     sendmsg('emergency')
-
 breakr = True
 sock.close()
